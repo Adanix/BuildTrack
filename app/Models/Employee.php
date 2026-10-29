@@ -64,3 +64,4 @@ class Employee extends Model
         return 'INR ' . number_format((float) $this->overtime_rate_per_hour_inr, 2);
     }
 }
+

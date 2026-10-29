@@ -166,3 +166,4 @@ class MachineryController extends Controller
         }
     }
 }
+

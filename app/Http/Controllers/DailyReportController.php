@@ -199,3 +199,4 @@ class DailyReportController extends Controller
         return back()->with('success', "Daily report #{$dailyReport->id} marked as {$validated['action']}.");
     }
 }
+

@@ -78,3 +78,4 @@ class PayrollRecord extends Model
         return 'INR ' . number_format((float) $this->net_salary_inr, 2);
     }
 }
+

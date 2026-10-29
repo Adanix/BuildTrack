@@ -83,3 +83,4 @@ class OvertimeAndPayrollLockingTest extends TestCase
         $this->assertEquals($originalNetSalary, $approvedRecord->net_salary_inr, 'Approved payroll record must remain locked.');
     }
 }
+

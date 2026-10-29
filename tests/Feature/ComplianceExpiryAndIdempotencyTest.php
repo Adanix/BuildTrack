@@ -99,3 +99,4 @@ class ComplianceExpiryAndIdempotencyTest extends TestCase
         $this->assertEquals('Smoke emission test equipment was offline; renewal scheduled.', $doc->flag_notes);
     }
 }
+

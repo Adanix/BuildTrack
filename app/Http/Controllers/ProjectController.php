@@ -185,3 +185,4 @@ class ProjectController extends Controller
         abort(403, 'You are not authorized to manage this project.');
     }
 }
+

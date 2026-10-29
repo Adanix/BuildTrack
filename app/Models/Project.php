@@ -65,3 +65,4 @@ class Project extends Model
         return 'INR ' . number_format((float) $this->budget_inr, 2);
     }
 }
+

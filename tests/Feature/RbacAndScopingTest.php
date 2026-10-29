@@ -59,3 +59,4 @@ class RbacAndScopingTest extends TestCase
         $response->assertStatus(403);
     }
 }
+

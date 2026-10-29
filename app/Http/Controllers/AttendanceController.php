@@ -247,3 +247,4 @@ class AttendanceController extends Controller
         abort(403, 'You do not have permission to approve overtime for this site.');
     }
 }
+

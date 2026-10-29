@@ -72,3 +72,4 @@ class DemoAuthSafetyTest extends TestCase
         $response->assertStatus(403);
     }
 }
+

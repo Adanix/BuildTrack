@@ -380,3 +380,4 @@ class ExportController extends Controller
         abort(403, 'Your role is not authorized to export ' . ucfirst($module) . ' records.');
     }
 }
+

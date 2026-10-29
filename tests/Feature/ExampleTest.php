@@ -2,18 +2,29 @@
 
 namespace Tests\Feature;
 
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
+    use RefreshDatabase;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->seed();
+    }
+
     /**
-     * A basic test example.
+     * Test that the landing page renders successfully for public visitors.
      */
-    public function test_the_root_redirects_unauthenticated_users_to_login(): void
+    public function test_the_root_renders_landing_page_successfully(): void
     {
         $response = $this->get('/');
 
-        $response->assertStatus(302);
-        $response->assertRedirect(route('login'));
+        $response->assertStatus(200);
+        $response->assertSee('BuildTrack India');
+        $response->assertSee('Civil Infrastructure');
     }
 }
+

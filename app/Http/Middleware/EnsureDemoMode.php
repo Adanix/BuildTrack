@@ -20,3 +20,4 @@ class EnsureDemoMode
         return $next($request);
     }
 }
+

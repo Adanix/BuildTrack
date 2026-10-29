@@ -37,3 +37,4 @@ class CheckMachineryExpiriesCommand extends Command
         return self::SUCCESS;
     }
 }
+

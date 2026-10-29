@@ -39,3 +39,4 @@ class ActivityLogController extends Controller
         return view('activity_logs.index', compact('logs', 'modules', 'module', 'search'));
     }
 }
+

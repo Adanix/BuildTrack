@@ -21,3 +21,4 @@ class DocsController extends Controller
         return view('docs.index', compact('demoUsers'));
     }
 }
+

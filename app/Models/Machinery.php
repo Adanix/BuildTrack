@@ -40,3 +40,4 @@ class Machinery extends Model
         return $this->hasMany(MachineryDocument::class, 'machinery_id');
     }
 }
+

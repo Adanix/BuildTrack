@@ -100,3 +100,4 @@ class ProjectProgressSyncTest extends TestCase
         $this->assertEquals($currentProgress, $project->overall_progress, 'Older report must not reduce official project progress.');
     }
 }
+

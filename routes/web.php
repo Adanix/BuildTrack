@@ -9,6 +9,7 @@ use App\Http\Controllers\DemoAuthController;
 use App\Http\Controllers\DocsController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\ExportController;
+use App\Http\Controllers\LandingController;
 use App\Http\Controllers\MachineryController;
 use App\Http\Controllers\PayrollController;
 use App\Http\Controllers\ProjectController;
@@ -20,9 +21,7 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
-Route::get('/', function () {
-    return auth()->check() ? redirect()->route('dashboard') : redirect()->route('login');
-});
+Route::get('/', [LandingController::class, 'index'])->name('home');
 
 Route::get('/login', [DemoAuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [DemoAuthController::class, 'login'])->name('login.submit');

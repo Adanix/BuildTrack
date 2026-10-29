@@ -141,3 +141,4 @@ class DemoAuthController extends Controller
         return redirect()->route('login')->with('success', 'You have been successfully logged out.');
     }
 }
+

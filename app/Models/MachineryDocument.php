@@ -88,3 +88,4 @@ class MachineryDocument extends Model
         return 'INR ' . number_format((float) $this->renewal_cost_estimate_inr, 2);
     }
 }
+
