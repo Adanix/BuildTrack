@@ -65,7 +65,18 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => env('APP_TIMEZONE', 'Asia/Kolkata'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application Demo Mode
+    |--------------------------------------------------------------------------
+    |
+    | When enabled, passwordless 1-click role login and switcher are enabled.
+    |
+    */
+
+    'demo_mode' => (bool) env('DEMO_MODE', true),
 
     /*
     |--------------------------------------------------------------------------
